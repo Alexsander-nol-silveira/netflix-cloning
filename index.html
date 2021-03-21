@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
     <title>Netflix Clone</title>
 
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <!-- files css -->
+    <link rel="stylesheet" href="/style/responsive.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/jquery.modal.min.css">
 </head>
 
 <body>
@@ -27,25 +31,76 @@
     <main>
         <div class="serie-principal">
             <div class="container">
-                <h3 class="titulo">My Hero Academia</h3>
-                <p class="descricao">Por toda a sua vida, Izuku sonhou ser um herói — um objetivo ambicioso para
-                    qualquer um, mas especialmente desafiador para um garoto sem superpoderes. Isso mesmo: em um mundo
-                    onde 80% da população tem algum tipo de Dom especial, Izuku teve a má sorte de nascer completamente
-                    normal. Mas isso não vai impedi-lo de se matricular em uma das academias de herois mais prestigiosas
-                    do mundo.</p>
+                <div class="container-legend">
+                    <h3 class="titulo">My Hero Academia</h3>
+                    <p class="descricao">Por toda a sua vida, Izuku sonhou ser um herói — um objetivo ambicioso para
+                        qualquer um, mas especialmente desafiador para um garoto sem superpoderes. Isso mesmo: em um
+                        mundo
+                        onde 80% da população tem algum tipo de Dom especial, Izuku teve a má sorte de nascer
+                        completamente
+                        normal. Mas isso não vai impedi-lo de se matricular em uma das academias de herois mais
+                        prestigiosas
+                        do mundo.</p>
+                </div>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <a class="botao" href="#ex1" rel="modal:open">
                         <i class="fas fa-play"></i>
                         Assistir Agora
-                    </button>
-                    <button role="button" class="botao">
+                    </a>
+                    <a class="botao">
                         <i class="fas fa-question-circle"></i>
                         Mais Informações
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="carrosel-series">
+        <div class="owl-carousel owl-theme">
+            <div class="items">
+                <img class="box-series" src="img/min.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min1.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min2.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min3.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min4.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min5.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min6.jpg" alt="" srcset="">
+            </div>
+            <div class="items">
+                <img class="box-series" src="img/min7.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- modal de abertura para o vídeo -->
+    <div id="ex1" class="modal">
+        <iframe width="430" height="315" src="https://www.youtube.com/embed/wIb3nnOeves" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- Files JS -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/config.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="/js/modal/jquery.modal.min.js"></script>
 </body>
 
 </html>

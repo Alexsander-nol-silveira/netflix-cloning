@@ -64,6 +64,7 @@ header nav a:hover {
 }
 
 .botao {
+    text-decoration: none;
     background-color: rgb(0, 0, 0, .50);
     border: none;
     color: #fff;
@@ -91,4 +92,10 @@ header nav a:hover {
 
 .serie-principal .container {
     width: 50%;
+}
+
+.box-series {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
